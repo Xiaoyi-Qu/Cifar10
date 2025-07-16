@@ -1,0 +1,159 @@
+digraph {
+	graph [bgcolor="#FFFFFF" color="#000000" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" pad="1.0,0.5" rankdir=TB]
+	edge [color="#000000" fontcolor="#000000" fontname=Times fontsize=10 style=solid]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-7" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>flatten</td></tr><tr><td>node-7</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-8" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>abs-QuantizeLinear</td></tr><tr><td>node-8</td></tr><tr><td>linear1.weight-torch.Size([64, 3072])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-9" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>reducemax</td></tr><tr><td>node-9</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-10" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>shape-QuantizeLinear</td></tr><tr><td>node-10</td></tr><tr><td>linear1.weight-torch.Size([64, 3072])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-11" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>expand</td></tr><tr><td>node-11</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-13" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>div</td></tr><tr><td>node-13</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-15" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-15</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-16" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>div-QuantizeLinear</td></tr><tr><td>node-16</td></tr><tr><td>linear1.weight-torch.Size([64, 3072])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-17" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>round</td></tr><tr><td>node-17</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-18" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>mul</td></tr><tr><td>node-18</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-19" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>transpose</td></tr><tr><td>node-19</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-20" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>matmul</td></tr><tr><td>node-20</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-22" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>reshape-QuantizeLinear</td></tr><tr><td>node-22</td></tr><tr><td>linear1.bias-torch.Size([64])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-23" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>shape</td></tr><tr><td>node-23</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-24" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>expand</td></tr><tr><td>node-24</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-25" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-25</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-26" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-26</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-27" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>abs-QuantizeLinear</td></tr><tr><td>node-27</td></tr><tr><td>linear2.weight-torch.Size([32, 64])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-28" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>reducemax</td></tr><tr><td>node-28</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-29" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>shape-QuantizeLinear</td></tr><tr><td>node-29</td></tr><tr><td>linear2.weight-torch.Size([32, 64])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-30" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>expand</td></tr><tr><td>node-30</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-32" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>div</td></tr><tr><td>node-32</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-34" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-34</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-35" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>div-QuantizeLinear</td></tr><tr><td>node-35</td></tr><tr><td>linear2.weight-torch.Size([32, 64])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-36" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>round</td></tr><tr><td>node-36</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-37" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>mul</td></tr><tr><td>node-37</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-38" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>transpose</td></tr><tr><td>node-38</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-39" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>matmul</td></tr><tr><td>node-39</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-41" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>reshape-QuantizeLinear</td></tr><tr><td>node-41</td></tr><tr><td>linear2.bias-torch.Size([32])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-42" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>shape</td></tr><tr><td>node-42</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-43" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>expand</td></tr><tr><td>node-43</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-44" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-44</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-45" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-45</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-46" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>abs-QuantizeLinear</td></tr><tr><td>node-46</td></tr><tr><td>linear3.weight-torch.Size([10, 32])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-47" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>reducemax</td></tr><tr><td>node-47</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-48" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>shape-QuantizeLinear</td></tr><tr><td>node-48</td></tr><tr><td>linear3.weight-torch.Size([10, 32])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-49" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>expand</td></tr><tr><td>node-49</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-51" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>div</td></tr><tr><td>node-51</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-53" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-53</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-54" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>div-QuantizeLinear</td></tr><tr><td>node-54</td></tr><tr><td>linear3.weight-torch.Size([10, 32])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-55" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>round</td></tr><tr><td>node-55</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-56" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>mul</td></tr><tr><td>node-56</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-57" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>transpose</td></tr><tr><td>node-57</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-58" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>matmul</td></tr><tr><td>node-58</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-60" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>reshape-QuantizeLinear</td></tr><tr><td>node-60</td></tr><tr><td>linear3.bias-torch.Size([10])</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-61" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>shape</td></tr><tr><td>node-61</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-62" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>expand</td></tr><tr><td>node-62</td></tr></table>>]
+	node [color="#360c4f" fillcolor="#360c4f" fontcolor="#360c4f" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-63" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-63</td></tr></table>>]
+	node [color="#000000" fillcolor="#E8E8E8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=ellipse style=filled]
+	dummy_input [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>dummy_input</td></tr></table>>]
+	node [color="#000000" fillcolor="#E8E8E8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=doubleoctagon style=filled]
+	dummy_output [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>dummy_output</td></tr></table>>]
+	"node-8" -> "node-9"
+	"node-9" -> "node-11"
+	"node-10" -> "node-11"
+	"node-11" -> "node-13"
+	"node-13" -> "node-15"
+	"node-15" -> "node-16"
+	"node-16" -> "node-17"
+	"node-17" -> "node-18"
+	"node-13" -> "node-18"
+	"node-18" -> "node-19"
+	"node-7" -> "node-20"
+	"node-19" -> "node-20"
+	"node-20" -> "node-23"
+	"node-22" -> "node-24"
+	"node-23" -> "node-24"
+	"node-20" -> "node-25"
+	"node-24" -> "node-25"
+	"node-25" -> "node-26"
+	"node-27" -> "node-28"
+	"node-28" -> "node-30"
+	"node-29" -> "node-30"
+	"node-30" -> "node-32"
+	"node-32" -> "node-34"
+	"node-34" -> "node-35"
+	"node-35" -> "node-36"
+	"node-36" -> "node-37"
+	"node-32" -> "node-37"
+	"node-37" -> "node-38"
+	"node-26" -> "node-39"
+	"node-38" -> "node-39"
+	"node-39" -> "node-42"
+	"node-41" -> "node-43"
+	"node-42" -> "node-43"
+	"node-39" -> "node-44"
+	"node-43" -> "node-44"
+	"node-44" -> "node-45"
+	"node-46" -> "node-47"
+	"node-47" -> "node-49"
+	"node-48" -> "node-49"
+	"node-49" -> "node-51"
+	"node-51" -> "node-53"
+	"node-53" -> "node-54"
+	"node-54" -> "node-55"
+	"node-55" -> "node-56"
+	"node-51" -> "node-56"
+	"node-56" -> "node-57"
+	"node-45" -> "node-58"
+	"node-57" -> "node-58"
+	"node-58" -> "node-61"
+	"node-60" -> "node-62"
+	"node-61" -> "node-62"
+	"node-58" -> "node-63"
+	"node-62" -> "node-63"
+	dummy_input -> "node-7"
+	"node-63" -> dummy_output
+}

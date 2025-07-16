@@ -1,0 +1,224 @@
+digraph {
+	graph [bgcolor="#FFFFFF" color="#000000" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" pad="1.0,0.5" rankdir=TB]
+	edge [color="#000000" fontcolor="#000000" fontname=Times fontsize=10 style=solid]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-123" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d7x7</td></tr><tr><td>node-123</td></tr><tr><td>conv1.weight-torch.Size([64, 3, 7, 7])</td></tr><tr><td>FLOPs-0.0642</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-124" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-124</td></tr><tr><td>bn1.weight-torch.Size([64])</td></tr><tr><td>bn1.bias-torch.Size([64])</td></tr><tr><td>bn1.running_mean-torch.Size([64])</td></tr><tr><td>bn1.running_var-torch.Size([64])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-125" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-125</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-126" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>maxpool3x3</td></tr><tr><td>node-126</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#8c7041" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-127" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-127</td></tr><tr><td>layer1.0.conv1.weight-torch.Size([64, 64, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#8c7041" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-128" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-128</td></tr><tr><td>layer1.0.bn1.weight-torch.Size([64])</td></tr><tr><td>layer1.0.bn1.bias-torch.Size([64])</td></tr><tr><td>layer1.0.bn1.running_mean-torch.Size([64])</td></tr><tr><td>layer1.0.bn1.running_var-torch.Size([64])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#8c7041" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-129" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-129</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-130" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-130</td></tr><tr><td>layer1.0.conv2.weight-torch.Size([64, 64, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-131" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-131</td></tr><tr><td>layer1.0.bn2.weight-torch.Size([64])</td></tr><tr><td>layer1.0.bn2.bias-torch.Size([64])</td></tr><tr><td>layer1.0.bn2.running_mean-torch.Size([64])</td></tr><tr><td>layer1.0.bn2.running_var-torch.Size([64])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-132" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-132</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-133" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-133</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#f2ec57" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-134" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-134</td></tr><tr><td>layer1.1.conv1.weight-torch.Size([64, 64, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#f2ec57" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-135" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-135</td></tr><tr><td>layer1.1.bn1.weight-torch.Size([64])</td></tr><tr><td>layer1.1.bn1.bias-torch.Size([64])</td></tr><tr><td>layer1.1.bn1.running_mean-torch.Size([64])</td></tr><tr><td>layer1.1.bn1.running_var-torch.Size([64])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#f2ec57" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-136" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-136</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-137" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-137</td></tr><tr><td>layer1.1.conv2.weight-torch.Size([64, 64, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-138" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-138</td></tr><tr><td>layer1.1.bn2.weight-torch.Size([64])</td></tr><tr><td>layer1.1.bn2.bias-torch.Size([64])</td></tr><tr><td>layer1.1.bn2.running_mean-torch.Size([64])</td></tr><tr><td>layer1.1.bn2.running_var-torch.Size([64])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-139" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-139</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#25f3e8" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-140" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-140</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#bf914c" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-141" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-141</td></tr><tr><td>layer2.0.conv1.weight-torch.Size([128, 64, 3, 3])</td></tr><tr><td>FLOPs-0.0314</td></tr></table>>]
+	node [color="#000000" fillcolor="#bf914c" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-142" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-142</td></tr><tr><td>layer2.0.bn1.weight-torch.Size([128])</td></tr><tr><td>layer2.0.bn1.bias-torch.Size([128])</td></tr><tr><td>layer2.0.bn1.running_mean-torch.Size([128])</td></tr><tr><td>layer2.0.bn1.running_var-torch.Size([128])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#bf914c" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-143" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-143</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-144" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-144</td></tr><tr><td>layer2.0.conv2.weight-torch.Size([128, 128, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-145" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-145</td></tr><tr><td>layer2.0.bn2.weight-torch.Size([128])</td></tr><tr><td>layer2.0.bn2.bias-torch.Size([128])</td></tr><tr><td>layer2.0.bn2.running_mean-torch.Size([128])</td></tr><tr><td>layer2.0.bn2.running_var-torch.Size([128])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-146" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d1x1</td></tr><tr><td>node-146</td></tr><tr><td>layer2.0.downsample.0.weight-torch.Size([128, 64, 1, 1])</td></tr><tr><td>FLOPs-0.0035</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-147" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-147</td></tr><tr><td>layer2.0.downsample.1.weight-torch.Size([128])</td></tr><tr><td>layer2.0.downsample.1.bias-torch.Size([128])</td></tr><tr><td>layer2.0.downsample.1.running_mean-torch.Size([128])</td></tr><tr><td>layer2.0.downsample.1.running_var-torch.Size([128])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-148" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-148</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-149" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-149</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3b47c3" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-150" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-150</td></tr><tr><td>layer2.1.conv1.weight-torch.Size([128, 128, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#3b47c3" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-151" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-151</td></tr><tr><td>layer2.1.bn1.weight-torch.Size([128])</td></tr><tr><td>layer2.1.bn1.bias-torch.Size([128])</td></tr><tr><td>layer2.1.bn1.running_mean-torch.Size([128])</td></tr><tr><td>layer2.1.bn1.running_var-torch.Size([128])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3b47c3" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-152" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-152</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-153" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-153</td></tr><tr><td>layer2.1.conv2.weight-torch.Size([128, 128, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-154" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-154</td></tr><tr><td>layer2.1.bn2.weight-torch.Size([128])</td></tr><tr><td>layer2.1.bn2.bias-torch.Size([128])</td></tr><tr><td>layer2.1.bn2.running_mean-torch.Size([128])</td></tr><tr><td>layer2.1.bn2.running_var-torch.Size([128])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-155" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-155</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3db6ac" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-156" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-156</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#280e4e" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-157" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-157</td></tr><tr><td>layer3.0.conv1.weight-torch.Size([256, 128, 3, 3])</td></tr><tr><td>FLOPs-0.0314</td></tr></table>>]
+	node [color="#000000" fillcolor="#280e4e" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-158" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-158</td></tr><tr><td>layer3.0.bn1.weight-torch.Size([256])</td></tr><tr><td>layer3.0.bn1.bias-torch.Size([256])</td></tr><tr><td>layer3.0.bn1.running_mean-torch.Size([256])</td></tr><tr><td>layer3.0.bn1.running_var-torch.Size([256])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#280e4e" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-159" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-159</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-160" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-160</td></tr><tr><td>layer3.0.conv2.weight-torch.Size([256, 256, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-161" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-161</td></tr><tr><td>layer3.0.bn2.weight-torch.Size([256])</td></tr><tr><td>layer3.0.bn2.bias-torch.Size([256])</td></tr><tr><td>layer3.0.bn2.running_mean-torch.Size([256])</td></tr><tr><td>layer3.0.bn2.running_var-torch.Size([256])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-162" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d1x1</td></tr><tr><td>node-162</td></tr><tr><td>layer3.0.downsample.0.weight-torch.Size([256, 128, 1, 1])</td></tr><tr><td>FLOPs-0.0035</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-163" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-163</td></tr><tr><td>layer3.0.downsample.1.weight-torch.Size([256])</td></tr><tr><td>layer3.0.downsample.1.bias-torch.Size([256])</td></tr><tr><td>layer3.0.downsample.1.running_mean-torch.Size([256])</td></tr><tr><td>layer3.0.downsample.1.running_var-torch.Size([256])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-164" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-164</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-165" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-165</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3b5938" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-166" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-166</td></tr><tr><td>layer3.1.conv1.weight-torch.Size([256, 256, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#3b5938" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-167" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-167</td></tr><tr><td>layer3.1.bn1.weight-torch.Size([256])</td></tr><tr><td>layer3.1.bn1.bias-torch.Size([256])</td></tr><tr><td>layer3.1.bn1.running_mean-torch.Size([256])</td></tr><tr><td>layer3.1.bn1.running_var-torch.Size([256])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#3b5938" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-168" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-168</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-169" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-169</td></tr><tr><td>layer3.1.conv2.weight-torch.Size([256, 256, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-170" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-170</td></tr><tr><td>layer3.1.bn2.weight-torch.Size([256])</td></tr><tr><td>layer3.1.bn2.bias-torch.Size([256])</td></tr><tr><td>layer3.1.bn2.running_mean-torch.Size([256])</td></tr><tr><td>layer3.1.bn2.running_var-torch.Size([256])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-171" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-171</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#906d91" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-172" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-172</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#72e2d4" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-173" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-173</td></tr><tr><td>layer4.0.conv1.weight-torch.Size([512, 256, 3, 3])</td></tr><tr><td>FLOPs-0.0314</td></tr></table>>]
+	node [color="#000000" fillcolor="#72e2d4" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-174" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-174</td></tr><tr><td>layer4.0.bn1.weight-torch.Size([512])</td></tr><tr><td>layer4.0.bn1.bias-torch.Size([512])</td></tr><tr><td>layer4.0.bn1.running_mean-torch.Size([512])</td></tr><tr><td>layer4.0.bn1.running_var-torch.Size([512])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#72e2d4" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-175" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-175</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-176" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-176</td></tr><tr><td>layer4.0.conv2.weight-torch.Size([512, 512, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-177" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-177</td></tr><tr><td>layer4.0.bn2.weight-torch.Size([512])</td></tr><tr><td>layer4.0.bn2.bias-torch.Size([512])</td></tr><tr><td>layer4.0.bn2.running_mean-torch.Size([512])</td></tr><tr><td>layer4.0.bn2.running_var-torch.Size([512])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-178" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d1x1</td></tr><tr><td>node-178</td></tr><tr><td>layer4.0.downsample.0.weight-torch.Size([512, 256, 1, 1])</td></tr><tr><td>FLOPs-0.0035</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-179" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-179</td></tr><tr><td>layer4.0.downsample.1.weight-torch.Size([512])</td></tr><tr><td>layer4.0.downsample.1.bias-torch.Size([512])</td></tr><tr><td>layer4.0.downsample.1.running_mean-torch.Size([512])</td></tr><tr><td>layer4.0.downsample.1.running_var-torch.Size([512])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-180" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-180</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-181" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-181</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#c8b3f0" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-182" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-182</td></tr><tr><td>layer4.1.conv1.weight-torch.Size([512, 512, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#c8b3f0" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-183" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-183</td></tr><tr><td>layer4.1.bn1.weight-torch.Size([512])</td></tr><tr><td>layer4.1.bn1.bias-torch.Size([512])</td></tr><tr><td>layer4.1.bn1.running_mean-torch.Size([512])</td></tr><tr><td>layer4.1.bn1.running_var-torch.Size([512])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#c8b3f0" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-184" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-184</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-185" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>conv-Conv2d3x3</td></tr><tr><td>node-185</td></tr><tr><td>layer4.1.conv2.weight-torch.Size([512, 512, 3, 3])</td></tr><tr><td>FLOPs-0.0629</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-186" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>batchnorm-BatchNorm2d</td></tr><tr><td>node-186</td></tr><tr><td>layer4.1.bn2.weight-torch.Size([512])</td></tr><tr><td>layer4.1.bn2.bias-torch.Size([512])</td></tr><tr><td>layer4.1.bn2.running_mean-torch.Size([512])</td></tr><tr><td>layer4.1.bn2.running_var-torch.Size([512])</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-187" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>add</td></tr><tr><td>node-187</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-188" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>relu</td></tr><tr><td>node-188</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-189" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>globalaveragepool</td></tr><tr><td>node-189</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#000000" fillcolor="#959add" fontcolor="#FFFFFF" fontname=Times fontsize=10 margin="0,0" shape=box style=filled]
+	"node-190" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>flatten</td></tr><tr><td>node-190</td></tr><tr><td>FLOPs-0.0000</td></tr></table>>]
+	node [color="#9240fb" fillcolor="#9240fb" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=box style=dashed]
+	"node-191" [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>linear-Linear</td></tr><tr><td>node-191</td></tr><tr><td>fc.weight-torch.Size([1000, 512])</td></tr><tr><td>fc.bias-torch.Size([1000])</td></tr><tr><td>FLOPs-0.0136</td></tr></table>>]
+	node [color="#000000" fillcolor="#E8E8E8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=ellipse style=filled]
+	dummy_input [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>dummy_input</td></tr></table>>]
+	node [color="#000000" fillcolor="#E8E8E8" fontcolor="#000000" fontname=Times fontsize=10 margin="0,0" shape=doubleoctagon style=filled]
+	dummy_output [label=<<table border='0' cellborder='0' cellpadding='0'><tr><td cellpadding='6'>dummy_output</td></tr></table>>]
+	"node-123" -> "node-124"
+	"node-124" -> "node-125"
+	"node-125" -> "node-126"
+	"node-126" -> "node-127"
+	"node-127" -> "node-128"
+	"node-128" -> "node-129"
+	"node-129" -> "node-130"
+	"node-130" -> "node-131"
+	"node-131" -> "node-132"
+	"node-126" -> "node-132"
+	"node-132" -> "node-133"
+	"node-133" -> "node-134"
+	"node-134" -> "node-135"
+	"node-135" -> "node-136"
+	"node-136" -> "node-137"
+	"node-137" -> "node-138"
+	"node-138" -> "node-139"
+	"node-133" -> "node-139"
+	"node-139" -> "node-140"
+	"node-140" -> "node-141"
+	"node-141" -> "node-142"
+	"node-142" -> "node-143"
+	"node-143" -> "node-144"
+	"node-144" -> "node-145"
+	"node-140" -> "node-146"
+	"node-146" -> "node-147"
+	"node-145" -> "node-148"
+	"node-147" -> "node-148"
+	"node-148" -> "node-149"
+	"node-149" -> "node-150"
+	"node-150" -> "node-151"
+	"node-151" -> "node-152"
+	"node-152" -> "node-153"
+	"node-153" -> "node-154"
+	"node-154" -> "node-155"
+	"node-149" -> "node-155"
+	"node-155" -> "node-156"
+	"node-156" -> "node-157"
+	"node-157" -> "node-158"
+	"node-158" -> "node-159"
+	"node-159" -> "node-160"
+	"node-160" -> "node-161"
+	"node-156" -> "node-162"
+	"node-162" -> "node-163"
+	"node-161" -> "node-164"
+	"node-163" -> "node-164"
+	"node-164" -> "node-165"
+	"node-165" -> "node-166"
+	"node-166" -> "node-167"
+	"node-167" -> "node-168"
+	"node-168" -> "node-169"
+	"node-169" -> "node-170"
+	"node-170" -> "node-171"
+	"node-165" -> "node-171"
+	"node-171" -> "node-172"
+	"node-172" -> "node-173"
+	"node-173" -> "node-174"
+	"node-174" -> "node-175"
+	"node-175" -> "node-176"
+	"node-176" -> "node-177"
+	"node-172" -> "node-178"
+	"node-178" -> "node-179"
+	"node-177" -> "node-180"
+	"node-179" -> "node-180"
+	"node-180" -> "node-181"
+	"node-181" -> "node-182"
+	"node-182" -> "node-183"
+	"node-183" -> "node-184"
+	"node-184" -> "node-185"
+	"node-185" -> "node-186"
+	"node-186" -> "node-187"
+	"node-181" -> "node-187"
+	"node-187" -> "node-188"
+	"node-188" -> "node-189"
+	"node-189" -> "node-190"
+	"node-190" -> "node-191"
+	dummy_input -> "node-123"
+	"node-191" -> dummy_output
+}
